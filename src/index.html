@@ -31,12 +31,14 @@
     header {
         grid-area: header;
         background-color: darkgreen;
+        min-height: 142px;
     }
     #content {
         grid-area: content;
         background-color: gray;
     }
     nav {
+        min-height: 142px;
         height: 100%;
         display: flex;
         flex-flow: row nowrap;
@@ -51,6 +53,9 @@
         font-size: 1rem;
         border: 2px solid white;
         border-radius: 1em;
+    }
+    button:active {
+        border-color: lightgreen;
     }
 </style>
 </html>
