@@ -1,0 +1,43 @@
+<!doctype html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Restaurant</title><script defer="defer" src="main.js"></script></head><body><header><nav><h1>Poggers El Pepe</h1><button id="home">Home</button> <button id="menu">Menu</button> <button id="about">About</button></nav></header><div id="content"></div></body><style>body {
+        margin: 0;
+        padding: 0;
+        display: grid;
+        grid-template-areas: 
+        "header"
+        "content";
+        grid-template-rows: 1fr 5fr;
+        height: 100vh;
+    }
+    header {
+        grid-area: header;
+        background-color: darkgreen;
+        min-height: 142px;
+    }
+    #content {
+        grid-area: content;
+        background-color: gray;
+    }
+    nav {
+        min-height: 142px;
+        height: 100%;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    button {
+        color: white;
+        background-color: transparent;
+        width: 5em;
+        height: 5em;
+        font-size: 1rem;
+        border: 2px solid white;
+        border-radius: 1em;
+    }
+    button:active {
+        border-color: lightgreen;
+    }
+    nav > h1 {
+        color: white;
+        font-size: 2rem;
+    }</style></html>
